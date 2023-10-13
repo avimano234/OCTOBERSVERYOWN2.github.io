@@ -8,7 +8,7 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-image: url('); /* Add your background image URL or file path here */
+            background-image: url('IMG-20231013-WA0004.jpg'); * Add your background image URL or file path here */
             background-size: 50%;
             color: #FFF; /* White text color */
             display: flex;
