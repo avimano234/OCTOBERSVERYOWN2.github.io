@@ -11,7 +11,7 @@
             text-align: center;
             font-family: Arial, sans-serif;
             background-image: url('IMG-20231013-WA0004.jpg'); * Add your background image URL or file path here */
-            background-size: 50%;
+            background-size: 25%;
             color: #FFF; /* White text color */
             display: flex;
             flex-direction: column;
@@ -30,7 +30,7 @@
         }
 
         .countdown {
-            font-size: 90px; /* Larger font size for the countdown */
+            font-size: 60px; /* Larger font size for the countdown */
             color: #FFF; /* White text color for the countdown */
         }
 
