@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -8,35 +9,35 @@
             text-align: center;
             font-family: Arial, sans-serif;
             background-image: url('IMG-20231013-WA0004.jpg');
-            background-size: cover; /* Make the background image cover the entire screen */
+            background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Keep the background fixed when scrolling */
+            background-attachment: fixed;
             color: #FFF;
             display: flex;
-    
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
 
-        
-            color: #FFF;
-            margin-top: 10px; /* Increase the margin to center the heading */
+        h1 {
             font-family: 'cursive', sans-serif;
-            font-size: 24px; /* Adjust font size for mobile */
+            font-size: 24px;
             text-shadow: 2px 2px 4px #000;
         }
 
         .countdown {
-            font-size: 40px; /* Adjust font size for mobile */
-            color: #FFF;
+            font-size: 40px;
         }
 
         .party-text {
-            font-size: 16px; /* Adjust font size for mobile */
-            color: #FFF;
+            font-size: 16px;
             margin-top: 10px;
+        }
+
+        .qr-code {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -45,10 +46,11 @@
     <p class="countdown" id="countdown"></p>
     <p class="party-text">You have been exclusively invited to a party in Sandton.</p>
     <p class="party-text">Location to be announced 20/10/2023</p>
-
+    <a href="https://example.com">
+        <img class="qr-code" src="your-qr-code.png" alt="QR Code" width="150" height="150">
+    </a>
     <script>
         var countDownDate = new Date("October 28, 2023 00:00:00").getTime();
-
         var x = setInterval(function() {
             var now = new Date().getTime();
             var timeLeft = countDownDate - now;
@@ -65,3 +67,4 @@
     </script>
 </body>
 </html>
+
