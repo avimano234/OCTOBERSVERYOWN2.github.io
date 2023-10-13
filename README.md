@@ -8,7 +8,7 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-image: url('Picsart_23-10-12_23-17-45-349.jpg'); /* Add your background image URL or file path here */
+            background-image: url('); /* Add your background image URL or file path here */
             background-size: 50%;
             color: #FFF; /* White text color */
             display: flex;
