@@ -1,6 +1,6 @@
 
 
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
             background-attachment: fixed; /* Keep the background fixed when scrolling */
             color: #FFF;
             display: flex;
-            flex-direction: column;
+    
             justify-content: center;
             align-items: center;
             height: 100vh;
