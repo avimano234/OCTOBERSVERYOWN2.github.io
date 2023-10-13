@@ -1,6 +1,3 @@
-
-
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,12 +8,11 @@
             text-align: center;
             font-family: Arial, sans-serif;
             background-image: url('IMG-20231013-WA0004.jpg');
-            background-size: cover; /* Make the background image cover the entire screen */
+            background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Keep the background fixed when scrolling */
-            color: #FFF;
+            background-attachment: fixed;
+            color: #000; /* Changed text color to black */
             display: flex;
-    
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -24,21 +20,20 @@
         }
 
         h1 {
-            color: #FFF;
-            margin-top: 10px; /* Increase the margin to center the heading */
+            margin-top: 10px;
             font-family: 'cursive', sans-serif;
-            font-size: 24px; /* Adjust font size for mobile */
-            text-shadow: 2px 2px 4px #000;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px #000; /* Adjusted text shadow color */
         }
 
         .countdown {
-            font-size: 40px; /* Adjust font size for mobile */
-            color: #FFF;
+            font-size: 40px;
+            color: #000; /* Changed text color to black */
         }
 
         .party-text {
-            font-size: 16px; /* Adjust font size for mobile */
-            color: #FFF;
+            font-size: 16px;
+            color: #000; /* Changed text color to black */
             margin-top: 10px;
         }
     </style>
@@ -68,5 +63,3 @@
     </script>
 </body>
 </html>
-   
-
