@@ -1,14 +1,14 @@
-
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OCTOBERS VERY OWN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-image: url('IMG-20231013-WA0004.jpg'); * Add your background image URL or file path here */
+            background-image: url('IMG-20231013-WA0004.jpg'); /* Add your background image URL or file path here */
             background-size: 50%;
             color: #FFF; /* White text color */
             display: flex;
@@ -22,7 +22,7 @@
         h1 {
             color: #FFF; /* White text color for the title */
             margin-top: -30px; /* Move the heading closer to the top margin */
-            font-family: 'cursive', sans-serif; /* Apply a custom or cursive font */
+            font-family: 'Pacifico', cursive, sans-serif; /* Apply the "Pacifico" font with fallback options */
             font-size: 36px; /* Adjust font size */
             text-shadow: 2px 2px 4px #000; /* Add text shadow for a cooler effect */
         }
@@ -75,3 +75,4 @@
     </script>
 </body>
 </html>
+
