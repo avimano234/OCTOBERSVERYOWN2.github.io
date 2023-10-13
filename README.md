@@ -1,5 +1,6 @@
 
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -35,6 +36,12 @@
             font-size: 14px; /* Reduced font size for mobile */
             margin-top: 10px;
         }
+
+        /* Remove the blue underlined link */
+        .party-text a {
+            text-decoration: none;
+            color: #FFF;
+        }
     </style>
 </head>
 <body>
@@ -43,12 +50,12 @@
     <p class="party-text">You have been exclusively invited to a party in Sandton.</p>
     <p class="party-text">Location to be announced: 20/10/2023</p>
     <script>
-        var countDownDate = new Date("October 28, 2023 00:00:00").getTime();
+        var countDownDate = a new Date("October 28, 2023 00:00:00").getTime();
         var x = setInterval(function() {
             var now = new Date().getTime();
             var timeLeft = countDownDate - now;
             var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var hours = Math floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
             document.getElementById("countdown").innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
@@ -60,3 +67,4 @@
     </script>
 </body>
 </html>
+
