@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -12,7 +13,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #888; /* Light grey text color */
+            color: #FFF; /* White text color */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,7 +23,6 @@
         }
 
         h1 {
-            font-family: 'cursive', sans-serif;
             font-size: 20px; /* Slightly reduced font size for mobile */
             text-shadow: 2px 2px 4px #000;
         }
@@ -41,7 +41,7 @@
     <h1>OCTOBERS VERY OWN</h1>
     <p class="countdown" id="countdown"></p>
     <p class="party-text">You have been exclusively invited to a party in Sandton.</p>
-    <p class="party-text">Location to be announced 20/10/2023</p>
+    <p class="party-text">Location to be announced: 20/10/2023</p>
     <script>
         var countDownDate = new Date("October 28, 2023 00:00:00").getTime();
         var x = setInterval(function() {
