@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,7 +12,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #FFF;
+            color: #888; /* Light grey text color */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,21 +23,17 @@
 
         h1 {
             font-family: 'cursive', sans-serif;
-            font-size: 24px;
+            font-size: 20px; /* Slightly reduced font size for mobile */
             text-shadow: 2px 2px 4px #000;
         }
 
         .countdown {
-            font-size: 40px;
+            font-size: 36px; /* Slightly reduced font size for mobile */
         }
 
         .party-text {
-            font-size: 16px;
+            font-size: 14px; /* Reduced font size for mobile */
             margin-top: 10px;
-        }
-
-        .qr-code {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -45,9 +42,6 @@
     <p class="countdown" id="countdown"></p>
     <p class="party-text">You have been exclusively invited to a party in Sandton.</p>
     <p class="party-text">Location to be announced 20/10/2023</p>
-    <a href="https://example.com">
-        <img class="qr-code" src="qrcode.png" alt="QR Code" width="150" height="150">
-    </a>
     <script>
         var countDownDate = new Date("October 28, 2023 00:00:00").getTime();
         var x = setInterval(function() {
