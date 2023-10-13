@@ -1,6 +1,6 @@
 
 
-   
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,11 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-image: url('IMG-20231013-WA0004.jpg'); * Add your background image URL or file path here */
-            background-size: 25%;
-            color: #FFF; /* White text color */
+            background-image: url('IMG-20231013-WA0004.jpg');
+            background-size: cover; /* Make the background image cover the entire screen */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keep the background fixed when scrolling */
+            color: #FFF;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,22 +24,22 @@
         }
 
         h1 {
-            color: #FFF; /* White text color for the title */
-            margin-top: -30px; /* Move the heading closer to the top margin */
-            font-family: 'cursive', sans-serif; /* Apply a custom or cursive font */
-            font-size: 36px; /* Adjust font size */
-            text-shadow: 2px 2px 4px #000; /* Add text shadow for a cooler effect */
+            color: #FFF;
+            margin-top: 10px; /* Increase the margin to center the heading */
+            font-family: 'cursive', sans-serif;
+            font-size: 24px; /* Adjust font size for mobile */
+            text-shadow: 2px 2px 4px #000;
         }
 
         .countdown {
-            font-size: 60px; /* Larger font size for the countdown */
-            color: #FFF; /* White text color for the countdown */
+            font-size: 40px; /* Adjust font size for mobile */
+            color: #FFF;
         }
 
         .party-text {
-            font-size: 24px; /* Smaller font size for the new text */
-            color: #FFF; /* White text color for the new text */
-            margin-top: 10px; /* Move the new text just below the countdown */
+            font-size: 16px; /* Adjust font size for mobile */
+            color: #FFF;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -48,27 +50,16 @@
     <p class="party-text">Location to be announced 20/10/2023</p>
 
     <script>
-        // Set the date we're counting down to
         var countDownDate = new Date("October 28, 2023 00:00:00").getTime();
 
-        // Update the countdown every 1 second
         var x = setInterval(function() {
-            // Get the current date and time
             var now = new Date().getTime();
-
-            // Calculate the time remaining
             var timeLeft = countDownDate - now;
-
-            // Calculate days, hours, minutes, and seconds
             var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            // Display the countdown in the element with id="countdown" with semicolons
             document.getElementById("countdown").innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
-
-            // If the countdown is over, display a message
             if (timeLeft < 0) {
                 clearInterval(x);
                 document.getElementById("countdown").innerHTML = "The party is here!";
@@ -77,4 +68,5 @@
     </script>
 </body>
 </html>
-        
+   
+
